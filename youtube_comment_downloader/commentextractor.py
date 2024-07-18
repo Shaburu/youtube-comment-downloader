@@ -9,5 +9,5 @@ for comment in islice(comments, 5000):
 
 print(comm_arr, "\n")
 
-with open("commentDump.txt") as f:
+with open('../DataFiles/ExportFiles/logs/Test.txt', 'w') as f:
     f.write(comm_arr)
