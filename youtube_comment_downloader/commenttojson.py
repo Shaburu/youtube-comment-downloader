@@ -3,7 +3,7 @@ from youtube_comment_downloader import *
 downloader = YoutubeCommentDownloader()
 comm_arr = ''
 comment_count = 0
-comments = downloader.get_comments_from_url('https://www.youtube.com/watch?v=nllZrOoxpzc')
+comments = downloader.get_comments_from_url('https://www.youtube.com/watch?v=_9b1G0Ivaas')
 for comment in comments:
     comm_arr += comment['text'] + '; '
     print(comment['cid'])
@@ -11,5 +11,5 @@ for comment in comments:
 
 print(comment_count)
 
-with open('aluxTop_nllZrOoxpzc.txt', 'w', encoding='utf-8') as f:
+with open('temp2.txt', 'w', encoding='utf-8') as f:
     f.write(comm_arr)
